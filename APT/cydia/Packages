@@ -1,13 +1,13 @@
 Package: ga.kevinsal03.cydia.cleanfolders
-Version: 0.0.1-4+debug
+Version: 0.0.1-5+debug
 Section: Tweaks
 Maintainer: Kevinsal03
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Filename: ./debs//CleanFolders.deb
-Size: 3472
+Size: 3476
 Installed-Size: 120
-MD5sum: 5f8fad70f93173ca9b9dd2bd821e6851
+MD5sum: c0dbbb27261fce850ebe94d8dd599981
 Description: Make folders look WAY better (all you need is substrate)
 Name: CleanFolders
 Author: Kevinsal03
