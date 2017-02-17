@@ -1,5 +1,11 @@
-./remove.sh
-#./packages.sh
+#checks for root
+if [ `id -u` != 0 ]; then echo ""Run this as root""; exit 0; fi 
 
-dpkg-scanpackages -m . /dev/null >Packages
-bzip2 Packages
+#setup
+echo "Removing items..."
+sudo ./remove.sh
+
+sudo dpkg-scanpackages -m ./debs/ /dev/null >./Packages
+
+sudo bzip2 -k ./Packages
+echo "done"

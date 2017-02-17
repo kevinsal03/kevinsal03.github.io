@@ -1,2 +1,1 @@
-#rm -r *.deb
-rm -r Packages.bz2
+sudo rm -r Packages.bz2
