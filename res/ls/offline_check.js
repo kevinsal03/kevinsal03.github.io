@@ -1,4 +1,4 @@
-var player = videojs('player');
+var player = videojs('live-video');
 player.on('timeupdate', function() {
     //$("#sobytes-liveplayer-offline-message").hide();
     if (player.currentTime() === last_value) {
