@@ -1,6 +1,6 @@
 var player = videojs('live-video');
 live-video.on('timeupdate', function() {
-    $("#sobytes-liveplayer-offline-message").hide();
+    //$("#sobytes-liveplayer-offline-message").hide();
     if (live-video.currentTime() === last_value) {
         if (offline_test > 3) {
             live-video.userActive(true);
