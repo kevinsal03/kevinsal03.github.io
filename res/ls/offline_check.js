@@ -1,8 +1,9 @@
-  videoPlayer.on('timeupdate', function() {
+var player = videojs('live-video');
+live-video.on('timeupdate', function() {
     $("#sobytes-liveplayer-offline-message").hide();
-    if (videoPlayer.currentTime() === last_value) {
+    if (live-video.currentTime() === last_value) {
         if (offline_test > 3) {
-            videoPlayer.userActive(true);
+            live-video.userActive(true);
             $("#video .vjs-live-display").text("OFFLINE");
             $("#video .vjs-remaining-time-display").text("OFFLINE");
             //$("#sobytes-live-image").attr("src", "/images/circle_red.png");
@@ -15,5 +16,5 @@
         $("#video .vjs-remaining-time-display").text("LIVE");
         $("#sobytes-live-image").attr("src", "/images/circle_green.png");
     } */
-    last_value = videoPlayer.currentTime();
+    last_value = live-video.currentTime();
 });
